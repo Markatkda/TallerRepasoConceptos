@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="998.0" style="-fx-background-color: #E9F7EF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductoEnvasadoController">
+   <children>
+      <Label layoutX="365.0" layoutY="14.0" prefHeight="39.0" prefWidth="269.0" text="CRUD PRODUCTO ENVASADO" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="69.0" text="Codigo:" />
+      <Label layoutX="60.0" layoutY="153.0" text="Nombre:" />
+      <Label layoutX="60.0" layoutY="241.0" text="Descripcion:" />
+      <Label layoutX="311.0" layoutY="69.0" text="Valor unitario:" />
+      <Label layoutX="311.0" layoutY="153.0" text="Cantidad existencias:" />
+      <Label layoutX="311.0" layoutY="241.0" text="Tipo: " />
+      <Label layoutX="589.0" layoutY="71.0" text="Codigo aprobacion:" />
+      <ChoiceBox fx:id="choiceBoxTipoProducto" layoutX="315.0" layoutY="268.0" prefWidth="150.0" />
+      <TextField fx:id="txtCodigoEnvasado" layoutX="61.0" layoutY="96.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtNombreEnvasado" layoutX="61.0" layoutY="180.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtDescripcionEnvasado" layoutX="61.0" layoutY="268.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtValorUnitEnvasado" layoutX="311.0" layoutY="96.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtCantidadExistEnvasado" layoutX="311.0" layoutY="180.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtCodigoAprobEnvasado" layoutX="587.0" layoutY="96.0" promptText="Ingrese texto" />
+      <Button fx:id="btnCrearEnvasado" layoutX="855.0" layoutY="96.0" mnemonicParsing="false" onAction="#crearEnvasado" prefHeight="39.0" prefWidth="127.0" text="CREAR" />
+      <Button fx:id="btnActualizarEnvasado" layoutX="855.0" layoutY="147.0" mnemonicParsing="false" onAction="#actualizarEnvasado" text="ACTUALIZAR" />
+      <Button fx:id="btnEliminarEnvasado" layoutX="855.0" layoutY="200.0" mnemonicParsing="false" onAction="#eliminarEnvasado" prefHeight="39.0" prefWidth="127.0" text="ELIMINAR" />
+      <Button fx:id="btnLimpiarCampos" layoutX="855.0" layoutY="249.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="39.0" prefWidth="127.0" text="LIMPIAR" />
+      <Separator layoutX="54.0" layoutY="315.0" prefHeight="17.0" prefWidth="866.0" />
+      <TableView fx:id="tblProductoEnvasado" layoutX="45.0" layoutY="423.0" prefHeight="232.0" prefWidth="866.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEnvasado" prefWidth="106.0" text="Codigo" />
+          <TableColumn fx:id="colNombreEnvasado" prefWidth="104.0" text="Nombre" />
+            <TableColumn fx:id="colDescripcionEnvasado" prefWidth="135.0" text="Descripcion" />
+            <TableColumn fx:id="colValorUnitEnvasado" prefWidth="126.0" text="Valor unitario" />
+            <TableColumn fx:id="colExistenciasEnvasado" minWidth="0.0" prefWidth="105.0" text="Existencias" />
+            <TableColumn fx:id="colCodAprobEnvasado" minWidth="0.0" prefWidth="110.0" text="Cod. Aprob" />
+            <TableColumn fx:id="colTempRefriEnvasado" minWidth="0.0" prefWidth="179.0" text="Temp. refrigeracion" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtBuscarEnvasado" layoutX="45.0" layoutY="373.0" prefHeight="39.0" prefWidth="672.0" promptText="Ingrese texto" />
+      <Button fx:id="btnBuscarEnvasado" layoutX="784.0" layoutY="373.0" mnemonicParsing="false" onAction="#buscarEnvasado" prefHeight="39.0" prefWidth="127.0" text="BUSCAR" />
+      <Label layoutX="343.0" layoutY="323.0" prefHeight="39.0" prefWidth="287.0" text="BUSCAR PRODUCTO ENVASADO" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSalirPestaña" layoutX="855.0" layoutY="14.0" mnemonicParsing="false" onAction="#salirPestaña" prefHeight="39.0" prefWidth="127.0" text="SALIR" />
+      <Label layoutX="587.0" layoutY="153.0" text="Temperatura de refrigeracion:" />
+      <TextField fx:id="txtTempRefrigeracionEnvasado" layoutX="587.0" layoutY="180.0" promptText="Ingrese texto" />
+   </children>
+</AnchorPane>

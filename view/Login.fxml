@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="718.0" style="-fx-background-color: #E9F7EF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="236.0" layoutY="14.0" text="VENTANA DE INGRESO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="71.0" text="Para crear un cliente seleccione una opcion:" />
+      <Button fx:id="btnAbrirCrudNatural" layoutX="424.0" layoutY="71.0" mnemonicParsing="false" onAction="#abrirCrudNatural" prefHeight="39.0" prefWidth="212.0" text="Cliente natural" />
+      <Button fx:id="btnAbrirCrudJuridico" layoutX="424.0" layoutY="125.0" mnemonicParsing="false" onAction="#abrirCrudJuridico" prefHeight="39.0" prefWidth="212.0" text="Cliente juridico" />
+      <Label layoutX="35.0" layoutY="307.0" text="Para crear un producto seleccione una opcion:" />
+      <Button fx:id="btnAbrirCrudPerecedero" layoutX="423.0" layoutY="307.0" mnemonicParsing="false" onAction="#abrirCrudPerecedero" prefHeight="39.0" prefWidth="212.0" text="Producto perecedero" />
+      <Button fx:id="btnAbrirCrudRefrigerado" layoutX="424.0" layoutY="417.0" mnemonicParsing="false" onAction="#abrirCrudRefrigerado" prefHeight="39.0" prefWidth="212.0" text="Producto refrigerado" />
+      <Button fx:id="btnAbrirCrudEnvasado" layoutX="423.0" layoutY="362.0" mnemonicParsing="false" onAction="#abrirCrudEnvasado" prefHeight="39.0" prefWidth="212.0" text="Producto envasado" />
+      <Separator layoutX="46.0" layoutY="246.0" prefHeight="25.0" prefWidth="631.0" />
+      <ImageView fitHeight="69.0" fitWidth="62.0" layoutX="35.0" layoutY="367.0">
+         <image>
+            <Image url="@../../../../../../../../Downloads/kisspng-portable-network-graphics-customer-support-custome-what-are-the-ways-to-fix-an-overheating-macbook-5d14130884a8a7.4168363315615966805434.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="62.0" layoutX="35.0" layoutY="130.0">
+         <image>
+            <Image url="@../../../../../../../../Downloads/kisspng-portable-network-graphics-customer-support-custome-what-are-the-ways-to-fix-an-overheating-macbook-5d14130884a8a7.4168363315615966805434.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

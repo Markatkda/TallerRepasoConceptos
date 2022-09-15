@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="998.0" style="-fx-background-color: #F4F6F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductoRefrigeradoController">
+   <children>
+      <Label layoutX="365.0" layoutY="14.0" prefHeight="39.0" prefWidth="269.0" text="CRUD PRODUCTO REFRIGERADO" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="69.0" text="Codigo:" />
+      <Label layoutX="60.0" layoutY="153.0" text="Nombre:" />
+      <Label layoutX="60.0" layoutY="241.0" text="Descripcion:" />
+      <Label layoutX="311.0" layoutY="69.0" text="Valor unitario:" />
+      <Label layoutX="311.0" layoutY="153.0" text="Cantidad existencias:" />
+      <Label layoutX="311.0" layoutY="241.0" text="Tipo: " />
+      <Label layoutX="589.0" layoutY="71.0" text="Fecha de envasado:" />
+      <ChoiceBox fx:id="choiceBoxTipoProducto" layoutX="315.0" layoutY="268.0" prefWidth="150.0" />
+      <TextField fx:id="txtCodigoRefrigerado" layoutX="61.0" layoutY="96.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtNombreRefrigerado" layoutX="61.0" layoutY="180.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtDescripcionRefrigerado" layoutX="60.0" layoutY="268.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtValorUnitRefrigerado" layoutX="311.0" layoutY="96.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtCantidadExistRefrigerado" layoutX="311.0" layoutY="180.0" promptText="Ingrese texto" />
+      <TextField fx:id="txtFechaEnvRefrigerado" layoutX="587.0" layoutY="96.0" promptText="Ingrese texto" />
+      <Button fx:id="btnCrearRefrigerado" layoutX="855.0" layoutY="96.0" mnemonicParsing="false" onAction="#crearRefrigerado" prefHeight="39.0" prefWidth="127.0" text="CREAR" />
+      <Button fx:id="btnActualizarRefrigerado" layoutX="855.0" layoutY="147.0" mnemonicParsing="false" onAction="#actualizarRefrigerado" text="ACTUALIZAR" />
+      <Button fx:id="btnEliminarRefrigerado" layoutX="855.0" layoutY="200.0" mnemonicParsing="false" onAction="#eliminarRefrigerado" prefHeight="39.0" prefWidth="127.0" text="ELIMINAR" />
+      <Button fx:id="btnLimpiarCampos" layoutX="855.0" layoutY="249.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="39.0" prefWidth="127.0" text="LIMPIAR" />
+      <Separator layoutX="45.0" layoutY="313.0" prefHeight="17.0" prefWidth="866.0" />
+      <TableView fx:id="tblProductoRefrigerado" layoutX="45.0" layoutY="423.0" prefHeight="232.0" prefWidth="866.0">
+        <columns>
+          <TableColumn fx:id="colCodigoRefrigerado" prefWidth="88.0" text="Codigo" />
+          <TableColumn fx:id="colNombreRefrigerado" prefWidth="95.0" text="Nombre" />
+            <TableColumn fx:id="colDescripcionRefrigerado" prefWidth="117.0" text="Descripcion" />
+            <TableColumn fx:id="colValorUnitRefrigerado" prefWidth="127.0" text="Valor unitario" />
+            <TableColumn fx:id="colExistenciasRefrigerado" minWidth="0.0" prefWidth="110.0" text="Existencias" />
+            <TableColumn fx:id="colFechaEnvaRefrigerado" minWidth="0.0" prefWidth="148.0" text="Fecha envasado" />
+            <TableColumn fx:id="colPesoRefrigerado" minWidth="0.0" prefWidth="61.0" text="Peso" />
+            <TableColumn fx:id="colPaisOrigenRefrigerado" minWidth="0.0" prefWidth="119.0" text="Pais origen" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtBuscarRefrigerado" layoutX="45.0" layoutY="373.0" prefHeight="39.0" prefWidth="672.0" promptText="Ingrese texto" />
+      <Button fx:id="btnBuscarRefrigerado" layoutX="784.0" layoutY="373.0" mnemonicParsing="false" onAction="#buscarRefrigerado" prefHeight="39.0" prefWidth="127.0" text="BUSCAR" />
+      <Label layoutX="343.0" layoutY="323.0" prefHeight="39.0" prefWidth="287.0" text="BUSCAR PRODUCTO REFRIGERADO" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="153.0" text="Peso del envase:" />
+      <TextField fx:id="txtPesoEnvRefrigerado" layoutX="587.0" layoutY="180.0" promptText="Ingrese texto" />
+      <Label layoutX="587.0" layoutY="241.0" text="Pais de origen:" />
+      <ChoiceBox fx:id="choiceBoxPaisOrigen" layoutX="587.0" layoutY="268.0" prefWidth="150.0" />
+      <Button fx:id="btnSalirPestaña" layoutX="855.0" layoutY="14.0" mnemonicParsing="false" onAction="#salirPestaña" prefHeight="39.0" prefWidth="127.0" text="SALIR" />
+   </children>
+</AnchorPane>
